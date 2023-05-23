@@ -1,4 +1,17 @@
-// Your code here
+const Calculator = require('./02-calculator')
+class FancyCalculator extends Calculator {
+	setTotal(newTotal) {
+		this.total = newTotal
+		return this.total
+	}
+	modulo(num) {
+		let mod = this.total%num
+		return this.total = mod
+	}
+	squared() {
+		return this.total *= this.total
+	}
+}
 
 /*****************************************************************************/
 /***************** DO NOT MODIFY ANYTHING UNDER THIS LINE ********************/
