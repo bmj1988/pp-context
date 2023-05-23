@@ -1,4 +1,5 @@
 function bindToAnArg(func, arg) {
+  return func.bind(null, arg)
   // Your code here
 }
 

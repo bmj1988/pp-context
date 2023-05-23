@@ -1,4 +1,5 @@
 function changeContext(func, obj) {
+  return func.call(obj)
   // Your code here
 }
 
